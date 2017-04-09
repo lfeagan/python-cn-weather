@@ -3,9 +3,9 @@ from BeautifulSoup import BeautifulSoup
 from itertools import islice
 
 r = requests.get('http://www.nmc.cn/publish/forecast/ASH/shanghai.html')
-print(r.status_code)
-print('content-type: ' + r.headers['content-type'])
-print('encoding: ' + r.encoding)
+#print(r.status_code)
+#print('content-type: ' + r.headers['content-type'])
+#print('encoding: ' + r.encoding)
 #print(r.text)
 soup = BeautifulSoup(r.text)
 day0 = soup.find("div", {"id": "day0"})
